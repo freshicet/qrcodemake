@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>QR Code Generator</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Generate QR</h1>
+		<form id="urlForm">
+			<label>
+				<input type="checkbox" id="includeBase" />
+				Include Base ID
+			</label>
+			<input type="text" id="baseid" placeholder="Base ID" />
+
+			<input type="text" id="clientid" placeholder="Client ID" required />
+			<input type="text" id="fname" placeholder="First Name" required />
+			<input type="text" id="lname" placeholder="Last Name" required />
+			<button type="submit">Generate QR</button>
+		</form>
+
+		<canvas id="qrcode"></canvas>
+
+		<script src="qrious.min.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>
